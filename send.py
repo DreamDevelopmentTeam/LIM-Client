@@ -12,7 +12,7 @@ id = 0
 if len(sys.argv) >= 2:
     t = sys.argv[1]
     if(t.isdigit()):id = int(t)
-
+s.sendto((str(id) + "@" + n + " Join").encode("UTF-8"),bd)
 while True:
     m = input("Input> ")
     if not m: continue
