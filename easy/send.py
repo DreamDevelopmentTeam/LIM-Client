@@ -17,6 +17,7 @@ while True:
     if not m: continue
     if m=="#FC":
         s.sendto(b"#FC", bd)
+        s.sendto((str(id) + "@#FC").encode("UTF-8"), bd)
         continue
     if m=="#PR":
         bd = ("255.255.255.255", gp)

@@ -16,5 +16,6 @@ while True:
     if not dc.startswith(str(id)+"@"): continue
     if dc=="#FC" or dc==(str(id)+"@#FC"):
         s.sendto(b"#RET", (a[0], gp))
+        s.sendto((str(id)+"@#RET").encode("UTF-8"), (a[0], gp))
         continue
     print(a,"=>",dc)
