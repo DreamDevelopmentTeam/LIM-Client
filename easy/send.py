@@ -16,11 +16,11 @@ while True:
     m=input("Input> ")
     if not m: continue
     if m=="#FC":
-        bd=("255.255.255.255",gp)
-        print(bd)
+        s.sendto(b"#FC", bd)
         continue
     if m=="#PR":
-        s.sendto(b"#FC",bd)
+        bd = ("255.255.255.255", gp)
+        print(bd)
         continue
     if m.startswith("#P"):
         ml=m.split(" ")
