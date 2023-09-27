@@ -19,6 +19,10 @@ while True:
     if m == "#FC":
         s.sendto(b"#FC",bd)
         continue
+    if m == "#PR":
+        bd = ("255.255.255.255", gp)
+        print(bd)
+        continue
     if m.startswith("#P"):
         ml = m.split(" ")
         if len(ml) > 1:
